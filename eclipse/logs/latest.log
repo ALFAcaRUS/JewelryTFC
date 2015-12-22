@@ -1,0 +1,96 @@
+[14:25:59] [main/INFO]: Logging in with username & password
+[14:26:17] [main/INFO]: Setting user: BloodALFAcaRUS
+[14:26:23] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:26:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:jewelry_tfc, FMLFileResourcePack:Baubles, FMLFileResourcePack:Waila, FMLFileResourcePack:TerraFirmaCraft
+[14:26:51] [Sound Library Loader/INFO]: Sound engine started
+[14:27:08] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[14:27:10] [Client thread/INFO]: Created: 1024x512 textures/items-atlas
+[14:27:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:jewelry_tfc, FMLFileResourcePack:Baubles, FMLFileResourcePack:Waila, FMLFileResourcePack:TerraFirmaCraft
+[14:27:20] [Client thread/INFO]: Created: 1024x1024 textures/items-atlas
+[14:27:21] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[14:27:22] [Sound Library Loader/INFO]: Sound engine started
+[14:28:17] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:28:17] [Server thread/INFO]: Generating keypair
+[14:28:19] [Server thread/INFO]: Preparing start region for level 0
+[14:28:20] [Server thread/INFO]: Preparing spawn area: 21%
+[14:28:21] [Server thread/INFO]: Preparing spawn area: 84%
+[14:28:22] [Server thread/INFO]: Changing view distance to 12, from 10
+[14:28:23] [Server thread/INFO]: BloodALFAcaRUS[local:E:33870215] logged in with entity id 141 at (-2.0879409033711225, 145.0, -12103.750912946589)
+[14:28:23] [Server thread/INFO]: BloodALFAcaRUS joined the game
+[14:28:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3148ms behind, skipping 62 tick(s)
+[14:28:40] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@75f4760e[id=c2255ac0-735c-49c5-a378-1ae1250e5b1e,name=BloodALFAcaRUS,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:133) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) [?:1.7.0_75]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [?:1.7.0_75]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_75]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_75]
+	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_75]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.7.0_75]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.7.0_75]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339) ~[?:1.7.0_75]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200) ~[?:1.7.0_75]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182) ~[?:1.7.0_75]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.7.0_75]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.7.0_75]
+	at java.net.Socket.connect(Socket.java:579) ~[?:1.7.0_75]
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:625) ~[?:1.7.0_75]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.7.0_75]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.7.0_75]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.7.0_75]
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:275) ~[?:1.7.0_75]
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:371) ~[?:1.7.0_75]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.7.0_75]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:976) ~[?:1.7.0_75]
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.7.0_75]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1301) ~[?:1.7.0_75]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.7.0_75]
+	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
+	... 18 more
+[14:29:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 16958ms behind, skipping 339 tick(s)
+[14:29:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5672ms behind, skipping 113 tick(s)
+[14:29:32] [Server thread/INFO]: Saving and pausing game...
+[14:29:32] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[14:29:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:29:32] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[14:30:09] [Server thread/INFO]: BloodALFAcaRUS fell out of the world
+[14:30:09] [Client thread/INFO]: [CHAT] BloodALFAcaRUS fell out of the world
+[14:30:09] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[14:32:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 71728ms behind, skipping 1434 tick(s)
+[14:32:27] [Server thread/INFO]: BloodALFAcaRUS fell out of the world
+[14:32:27] [Client thread/INFO]: [CHAT] BloodALFAcaRUS fell out of the world
+[14:32:27] [Client thread/INFO]: [CHAT] Ouch! That looked like it hurt
+[14:32:48] [Server thread/INFO]: Saving and pausing game...
+[14:32:48] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[14:32:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:32:48] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[17:38:46] [Server thread/INFO]: Saving and pausing game...
+[17:38:46] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[17:38:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:38:46] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[18:51:14] [Server thread/INFO]: Saving and pausing game...
+[18:51:14] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[18:51:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:51:14] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[18:51:18] [Server thread/INFO]: Stopping server
+[18:51:18] [Server thread/INFO]: Saving players
+[18:51:18] [Server thread/INFO]: Saving worlds
+[18:51:18] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[18:51:18] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:51:18] [Server thread/INFO]: Saving chunks for level 'New World'/DEFAULT
+[18:51:26] [Client thread/INFO]: Stopping!
