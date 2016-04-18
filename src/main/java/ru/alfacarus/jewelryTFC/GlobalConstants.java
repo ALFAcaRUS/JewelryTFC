@@ -8,4 +8,5 @@ public class GlobalConstants {
     public static final String HEALING_EFFECT_NAME = "healing_effect";
     public static final String EXPERIENCE_EFFECT_NAME = "experience_effect";
     public static final String SKILL_EFFECT_NAME = "skill_effect";
+    public static final String WATER_EFFECT_NAME = "water_effect";
 }

@@ -4,7 +4,7 @@ import Mock.SettingsLoaderMock;
 import Mock.terrafirmacraft.OreMock;
 import Mock.utils.MinecraftAdapterMock;
 import Mock.utils.RuntimeFactoryMock;
-import javafx.geometry.Point3D;
+//import javafx.geometry.Point3D;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ChatComponentText;
 import org.junit.Assert;

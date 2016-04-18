@@ -35,6 +35,7 @@ public class JewelryTFC {
         effectManager.addEffect(GlobalConstants.HEALING_EFFECT_NAME, new HealingEffect(loadingFactory));
         effectManager.addEffect(GlobalConstants.EXPERIENCE_EFFECT_NAME, new ExperienceEffect(loadingFactory));
         effectManager.addEffect(GlobalConstants.SKILL_EFFECT_NAME, new SkillEffect(loadingFactory));
+        effectManager.addEffect(GlobalConstants.WATER_EFFECT_NAME, new WaterEffect(loadingFactory));
 
         //Register event handlers
         MinecraftForge.EVENT_BUS.register(new VanillaEventsHandler());

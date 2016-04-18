@@ -19,10 +19,10 @@ public class OneGemComponentStrategy extends AbstractStrategy {
     public OneGemComponentStrategy(ILoadingFactory loadingFactory) {
         super(loadingFactory);
         EffectManager effectManager = loadingFactory.getEffectManager();
-        gemContainers = new ArrayList<>();
+        gemContainers = new ArrayList();
         gemContainers.add(new Container(TFCItems.gemAgate, effectManager.getEffectByName(GlobalConstants.SPEED_EFFECT_NAME), TFCItems.silverIngot));
         gemContainers.add(new Container(TFCItems.gemAmethyst, effectManager.getEffectByName(GlobalConstants.REMOVE_POTION_EFFECT_NAME), TFCItems.silverIngot));
-        gemContainers.add(new Container(TFCItems.gemBeryl, null, TFCItems.goldIngot));
+        gemContainers.add(new Container(TFCItems.gemBeryl, effectManager.getEffectByName(GlobalConstants.WATER_EFFECT_NAME), TFCItems.goldIngot));
         gemContainers.add(new Container(TFCItems.gemDiamond, null, null));
         gemContainers.add(new Container(TFCItems.gemEmerald, null, TFCItems.silverIngot));
         gemContainers.add(new Container(TFCItems.gemGarnet, null, TFCItems.silverIngot));

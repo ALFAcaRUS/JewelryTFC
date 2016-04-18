@@ -20,7 +20,7 @@ public class ItemManager {
     public ItemManager(ILoadingFactory factory){
         this.factory = factory.getRuntimeFactory();
         this.strategies = new ArrayList();
-        this.itemMap = new LinkedHashMap<>();
+        this.itemMap = new LinkedHashMap();
         this.recipes = new LinkedList();
         this.shapedRecipes = new LinkedList();
     }

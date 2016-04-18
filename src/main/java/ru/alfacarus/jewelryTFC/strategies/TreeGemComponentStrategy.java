@@ -20,7 +20,7 @@ public class TreeGemComponentStrategy extends OneGemComponentStrategy{
     public TreeGemComponentStrategy(ILoadingFactory loadingFactory) {
         super(loadingFactory);
         EffectManager manager = loadingFactory.getEffectManager();
-        bonusMap = new HashMap<>();
+        bonusMap = new HashMap();
         bonusMap.put(TFCItems.gemAgate, manager.getEffectByName(GlobalConstants.REMOVE_POTION_EFFECT_NAME));
         bonusMap.put(TFCItems.gemAmethyst, manager.getEffectByName(GlobalConstants.SPEED_EFFECT_NAME));
         bonusMap.put(TFCItems.gemBeryl, null);
@@ -28,7 +28,7 @@ public class TreeGemComponentStrategy extends OneGemComponentStrategy{
         bonusMap.put(TFCItems.gemEmerald, manager.getEffectByName(GlobalConstants.MOB_PROTECTION_EFFECT_NAME));
         bonusMap.put(TFCItems.gemGarnet, null);
         bonusMap.put(TFCItems.gemJade, manager.getEffectByName(GlobalConstants.EXPERIENCE_EFFECT_NAME));
-        bonusMap.put(TFCItems.gemJasper, null);
+        bonusMap.put(TFCItems.gemJasper, manager.getEffectByName(GlobalConstants.WATER_EFFECT_NAME));
         bonusMap.put(TFCItems.gemOpal, null);
         bonusMap.put(TFCItems.gemRuby, manager.getEffectByName(GlobalConstants.HEALING_EFFECT_NAME));
         bonusMap.put(TFCItems.gemTopaz, manager.getEffectByName(GlobalConstants.SKILL_EFFECT_NAME));

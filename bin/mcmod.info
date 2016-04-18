@@ -1,0 +1,16 @@
+[
+{
+  "modId": "jewelry_tfc",
+  "name": "JewelryTFC",
+  "description": "Addon for terrafirmacraft. Add some jewelry.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http:\\squareland.ru",
+  "updateUrl": "",
+  "authorList": ["ALFAcaRUS"],
+  "credits": "The Forge and FML guys, for making this addon.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

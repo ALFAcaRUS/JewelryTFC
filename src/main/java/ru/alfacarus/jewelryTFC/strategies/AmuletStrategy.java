@@ -24,8 +24,8 @@ public class AmuletStrategy extends AbstractStrategy{
     @Override
     public void createItems(ItemManager manager) {
         HashMap<AbstractEffect, Item> bonusMap = getBonusMap();
-        LinkedList<JewelryComponentItem> chains = new LinkedList<>();
-        LinkedList<JewelryComponentItem> coulombs = new LinkedList<>();
+        LinkedList<JewelryComponentItem> chains = new LinkedList();
+        LinkedList<JewelryComponentItem> coulombs = new LinkedList();
 
         for (Item item: manager.getItems()){
             if(item instanceof JewelryComponentItem){
@@ -57,13 +57,14 @@ public class AmuletStrategy extends AbstractStrategy{
 
     protected HashMap<AbstractEffect, Item> getBonusMap(){
         EffectManager effectManager = loadingFactory.getEffectManager();
-        HashMap<AbstractEffect, Item> map = new HashMap<>();
+        HashMap<AbstractEffect, Item> map = new HashMap();
         map.put(effectManager.getEffectByName(GlobalConstants.MOB_PROTECTION_EFFECT_NAME), TFCItems.goldIngot);
         map.put(effectManager.getEffectByName(GlobalConstants.SPEED_EFFECT_NAME), TFCItems.silverIngot);
         map.put(effectManager.getEffectByName(GlobalConstants.REMOVE_POTION_EFFECT_NAME), TFCItems.silverIngot);
         map.put(effectManager.getEffectByName(GlobalConstants.HEALING_EFFECT_NAME), TFCItems.silverIngot);
         map.put(effectManager.getEffectByName(GlobalConstants.EXPERIENCE_EFFECT_NAME), TFCItems.goldIngot);
         map.put(effectManager.getEffectByName(GlobalConstants.SKILL_EFFECT_NAME), TFCItems.goldIngot);
+        map.put(effectManager.getEffectByName(GlobalConstants.WATER_EFFECT_NAME), TFCItems.goldIngot);
         return map;
     }
 

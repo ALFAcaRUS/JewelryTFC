@@ -40,7 +40,7 @@ public class RemovePotionEffect extends AbstractEffect {
 
         if(needWater || needFood) return;
 
-        Collection<PotionEffect> effects = new ArrayList<>();
+        Collection<PotionEffect> effects = new ArrayList();
         effects.addAll(entityLivingBase.getActivePotionEffects());
         for(PotionEffect effect: effects){
             entityLivingBase.removePotionEffect(effect.getPotionID());

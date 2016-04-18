@@ -21,8 +21,8 @@ public class BeltStrategy extends AbstractStrategy{
     @Override
     public void createItems(ItemManager manager) {
         HashMap<AbstractEffect, Item> bonusMap = getBonusMap();
-        LinkedList<JewelryComponentItem> belts = new LinkedList<>();
-        LinkedList<JewelryComponentItem> clasps = new LinkedList<>();
+        LinkedList<JewelryComponentItem> belts = new LinkedList();
+        LinkedList<JewelryComponentItem> clasps = new LinkedList();
 
         for (Item item: manager.getItems()){
             if(item instanceof JewelryComponentItem){
@@ -53,7 +53,7 @@ public class BeltStrategy extends AbstractStrategy{
     }
 
     protected HashMap<AbstractEffect, Item> getBonusMap(){
-        HashMap<AbstractEffect, Item> map = new HashMap<>();
+        HashMap<AbstractEffect, Item> map = new HashMap();
         return map;
     }
 

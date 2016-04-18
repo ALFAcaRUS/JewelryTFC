@@ -26,7 +26,7 @@ public class BaseComponentsStrategy extends AbstractStrategy{
 
     public BaseComponentsStrategy(ILoadingFactory loadingFactory) {
         super(loadingFactory);
-        recipes = new LinkedList<>();
+        recipes = new LinkedList();
     }
 
     @Override
@@ -94,6 +94,8 @@ public class BaseComponentsStrategy extends AbstractStrategy{
             case CLASP: return CLASP_PLAN_NAME;
             case CHAIN: return CHAIN_PLAN_NAME;
             case RING: return RING_PLAN_NAME;
+		default:
+			break;
         }
         return "just_do_it";
     }

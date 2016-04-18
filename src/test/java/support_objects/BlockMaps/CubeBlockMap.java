@@ -1,6 +1,6 @@
 package support_objects.BlockMaps;
 
-import javafx.geometry.Point3D;
+//import javafx.geometry.Point3D;
 import minecraft_mocks.BlockMock;
 import net.minecraft.block.Block;
 
@@ -26,14 +26,14 @@ public class CubeBlockMap extends BaseBlockMap{
         }
     }
 
-    public void createCube(Point3D pos, Point3D size, Block block){
-        for (int i = (int)pos.getX(); i < pos.getX() + size.getX(); ++i){
-            for (int j = (int)pos.getY(); j < pos.getY() + size.getY(); ++j) {
-                for (int k = (int)pos.getZ(); k < pos.getZ() + size.getZ(); ++k) {
-                    this.setBlock(block, i, j, k);
-                }
-            }
-        }
-
-    }
+//    public void createCube(Point3D pos, Point3D size, Block block){
+//        for (int i = (int)pos.getX(); i < pos.getX() + size.getX(); ++i){
+//            for (int j = (int)pos.getY(); j < pos.getY() + size.getY(); ++j) {
+//                for (int k = (int)pos.getZ(); k < pos.getZ() + size.getZ(); ++k) {
+//                    this.setBlock(block, i, j, k);
+//                }
+//            }
+//        }
+//
+//    }
 }

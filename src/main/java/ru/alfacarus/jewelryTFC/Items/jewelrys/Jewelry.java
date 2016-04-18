@@ -21,6 +21,8 @@ public class Jewelry extends BaseItem implements IBauble{
     public Jewelry(ILoadingFactory loadingFactory, AbstractEffect effect, String name) {
         super(loadingFactory);
         this.effect = effect;
+        this.setHasSubtypes(false);
+        this.setMaxDamage(1000);
         this.setUnlocalizedName(name);
     }
 
